@@ -1,3 +1,5 @@
 function commandline_copy
-  echo (commandline) | pbcopy
+  if type -q pbcopy
+    echo (commandline) | pbcopy
+  end
 end
